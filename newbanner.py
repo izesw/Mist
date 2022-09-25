@@ -14,7 +14,7 @@ def do_something(sc):
     json_object = json.dumps(dictionary, indent=4)
     
     # Writing to sample.json
-    with open("banner.json", "w") as outfile:
+    with open("https://raw.githubusercontent.com/izesw/Mist/main/banner.json", "w") as outfile:
         outfile.write(json_object)
     sc.enter(60, 1, do_something, (sc,))
 
